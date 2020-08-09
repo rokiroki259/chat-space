@@ -28,13 +28,13 @@ Things you may want to cover:
 |------|----|-------|
 |id|integer|null: false|
 |name|string|null: false|
-|Email|string|null: false|
+|email|string|null: false|
 |password|string|null: false|
 
 ### Assosiation
 - has_many :groups_users
 - has_many :groups, through:  :groups_users
-- has_many :Messages
+- has_many :messages
 
 ## groupsテーブル
 |Column|Type|Options|
