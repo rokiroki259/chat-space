@@ -1,5 +1,14 @@
-.side_ber
-  .side_ber_user_name
-    <ユーザーの名前が出る>
-  .side_ber_group_list
+.sideber
+  .sideber_header
+    .sidebar_header_box
+      %p.sidebar_header_box_username
+        ユーザー
+      %ul.sidebar_header_box__menu
+        %li.sidebar_header_box__edit-user
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.sidebar_header_box__edit-groups
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .sideber_group_list
     <入ってるグループ全部でる>
