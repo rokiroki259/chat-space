@@ -1,14 +1,19 @@
 .sideber
-  .sideber_header
-    .sidebar_header_box
-      %p.sidebar_header_box_username
+  .sideber__header
+    .sidebar__header__box
+      %p.sidebar__header__box__username
         ユーザー
-      %ul.sidebar_header_box__menu
-        %li.sidebar_header_box__edit-user
+      %ul.sidebar__header__box__menu
+        %li.sidebar_header__box__edit--user
           = link_to "#" do
             = icon('fas', 'edit')
-        %li.sidebar_header_box__edit-groups
+        %li.sidebar_header__box__edit--groups
           = link_to "#" do
             = icon('fas', 'cog')
-  .sideber_group_list
-    <入ってるグループ全部でる>
+  .groups
+    %a{ href: '#' }
+      .groups__lists
+        %p.groups__lists__name
+          aaaa
+        %p.groups__lists__message
+          まだメッセージがありません

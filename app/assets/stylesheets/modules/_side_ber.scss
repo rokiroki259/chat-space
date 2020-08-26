@@ -3,29 +3,24 @@
   float: left;
   
   background-color: #253141;
-  .sideber_header {
+  .sideber__header {
   height: 100px;
   padding: 0px 20px;
   align-items: center;
   display: flex;
   background-color: #253141;
-    .sidebar_header_box {
+    .sidebar__header__box {
     height: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-      .sidebar_header_box_username {
+      .sidebar__header_box__username {
         color: #ffffff;
         line-height: 20px;
         font-size: 16px;
       }
-      .sidebar_header_box__menu {
+      .sidebar__header__box__menu {
         line-height: 20px;
-        .sidebar_header_box__edit-user {
-
-        }
-      .sidebar_header_box__edit-groups {
-        }
       li {
         display: inline;
         text-align: right;
@@ -39,9 +34,10 @@
       }
     }
   }
-  .sideber_group_list {
+}
+.groups {
   height: calc(100vh - 100px);
   background-color: #2f3e51;
-  padding: 0px 20px;
+  padding: 20px 20px 0px;
+  
   }
-}
