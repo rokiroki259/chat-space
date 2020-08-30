@@ -1,19 +1,29 @@
 .sideber
   .sideber__header
-    .sidebar__header__box
-      %p.sidebar__header__box__username
+    .sideber__header__box
+      %p.sidebar__header__box--username
         ユーザー
-      %ul.sidebar__header__box__menu
-        %li.sidebar_header__box__edit--user
+      %ul.sidebar__header__box--menu
+        %li.sidebar_header__box__edit--account
           = link_to "#" do
-            = icon('fas', 'edit')
-        %li.sidebar_header__box__edit--groups
+            = icon('fa', 'edit')
+        %li.sidebar_header__box--createChatGroup
           = link_to "#" do
-            = icon('fas', 'cog')
+            = icon('fa', 'cog')
   .groups
-    %a{ href: '#' }
+    = link_to "#" do
       .groups__lists
-        %p.groups__lists__name
+        .groups__lists__name
           aaaa
-        %p.groups__lists__message
+        .groups__lists__message
           まだメッセージがありません
+      .groups__lists
+        .groups__lists__name
+          aaaa
+        .groups__lists__message
+          まだメッセージがありません
+      .groups__lists
+        .groups__lists__name
+          aaaa
+        .groups__lists__message
+          まだメッセージがありません    
