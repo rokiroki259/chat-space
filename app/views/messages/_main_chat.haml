@@ -1,0 +1,31 @@
+.main_chat
+  .main_chat__header
+    .main_chat__header__groupInformationBox
+      %h2.main_chat__header__groupInformationBox--groupName
+        え
+      %ul.main_chat__header__groupInformationBox--groupMember
+        Member : 
+        %li.main_chat__header__name__group__member__name
+          俺
+    .main_chat__header--editGroup
+      = link_to "#" do
+        .main_chat__header--editGroup--btn
+          Edit
+  .main_chat__chatField
+    .main_chat__chatField__postContent
+      .main_chat__chatField__postContent__contributorAndDateBox
+        %p.main_chat__chatField__postContent__contributorAndDateBox--contributor
+          a
+        %p.main_chat__chatField__postContent__contributorAndDateBox--date
+          2020/08/26(Wed) 20:25
+      %p.main_chat__chatField__postContent--message
+        投稿内容
+    
+  .main_chat__postForm
+    = form_tag "", class:"postFormBox", id:"postFormBox", url: "#" do
+      .postFormBox--textImageInputForm
+        = text_field 'type message', '', class: 'inputForm--text', placeholder: "type a message"
+        %label{class: "inputForm--image"}
+          = icon('fas', 'image')
+          %input{type: "file", id: "image"}
+      %input.submitBtn{name: "commit", type: "submit", value: "Send"}
