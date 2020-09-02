@@ -5,25 +5,18 @@
         ユーザー
       %ul.sidebar__header__box--menu
         %li.sidebar_header__box__edit--account
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fa', 'edit')
         %li.sidebar_header__box--createChatGroup
           = link_to "#" do
             = icon('fa', 'cog')
   .groups
-    = link_to "#" do
-      .groups__lists
-        .groups__lists__name
-          aaaa
-        .groups__lists__message
-          まだメッセージがありません
-      .groups__lists
-        .groups__lists__name
-          aaaa
-        .groups__lists__message
-          まだメッセージがありません
-      .groups__lists
-        .groups__lists__name
-          aaaa
-        .groups__lists__message
-          まだメッセージがありません    
+    - current_user.groups.each do |group|
+      .group
+        .groups__lists
+          = link_to "#" do
+            .groups__lists__name
+              = group.name
+            .groups__lists__message
+              まだメッセージがありません
+      
